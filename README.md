@@ -52,8 +52,8 @@ AppNexus is hosting a version (generally bleeding-edge of this repo including so
 ### Getting
 1. Install glide: https://github.com/Masterminds/glide#install
 2. `cd $GOPATH`
-3. `git clone https://github.com/prebid/prebid-server src/github.com/prebid/prebid-server`
-4. `cd src/github.com/prebid/prebid-server`
+3. `git clone https://github.com/dbmedialab/prebid-server src/github.com/dbmedialab/prebid-server`
+4. `cd src/github.com/dbmedialab/prebid-server`
 5. `glide install`
 6. `./validate.sh`
 
@@ -74,8 +74,8 @@ docker container, and must be specifically be compiled for the target
 architecture (alpine).
 
 ```
-$ docker run --rm -v "$PWD":/go/src/github.com/prebid/prebid-server \
--w /go/src/github.com/prebid/prebid-server \
+$ docker run --rm -v "$PWD":/go/src/github.com/dbmedialab/prebid-server \
+-w /go/src/github.com/dbmedialab/prebid-server \
 billyteves/alpine-golang-glide:1.2.0 \
 /bin/bash -c 'glide install; go build -v'
 ```

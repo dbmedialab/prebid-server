@@ -26,16 +26,16 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/prebid/prebid-server/adapters"
-	"github.com/prebid/prebid-server/cache"
-	"github.com/prebid/prebid-server/cache/dummycache"
-	"github.com/prebid/prebid-server/cache/filecache"
-	"github.com/prebid/prebid-server/cache/postgrescache"
-	"github.com/prebid/prebid-server/config"
-	"github.com/prebid/prebid-server/pbs"
-	"github.com/prebid/prebid-server/pbsmetrics"
-	"github.com/prebid/prebid-server/prebid"
-	pbc "github.com/prebid/prebid-server/prebid_cache_client"
+	"github.com/dbmedialab/prebid-server/adapters"
+	"github.com/dbmedialab/prebid-server/cache"
+	"github.com/dbmedialab/prebid-server/cache/dummycache"
+	"github.com/dbmedialab/prebid-server/cache/filecache"
+	"github.com/dbmedialab/prebid-server/cache/postgrescache"
+	"github.com/dbmedialab/prebid-server/config"
+	"github.com/dbmedialab/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/pbsmetrics"
+	"github.com/dbmedialab/prebid-server/prebid"
+	pbc "github.com/dbmedialab/prebid-server/prebid_cache_client"
 )
 
 var hostCookieSettings pbs.HostCookieSettings

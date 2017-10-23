@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prebid/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/pbs"
 
 	"fmt"
 

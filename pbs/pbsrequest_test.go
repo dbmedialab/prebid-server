@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/magiconair/properties/assert"
-	"github.com/prebid/prebid-server/cache/dummycache"
+	"github.com/dbmedialab/prebid-server/cache/dummycache"
 )
 
 const mimeVideoMp4 = "video/mp4"

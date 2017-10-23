@@ -28,7 +28,7 @@ test: deps
 	#ifeq ($(adapter),"all")
 	#	./validate.sh
 	#else
-	#	go test github.com/prebid/prebid-server/adapters/$(adapter) -bench=.
+	#	go test github.com/dbmedialab/prebid-server/adapters/$(adapter) -bench=.
 	#endif
 
 # build will ensure all of our tests pass and then build the go binary

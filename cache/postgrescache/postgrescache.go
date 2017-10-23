@@ -10,7 +10,7 @@ import (
 
 	"github.com/coocood/freecache"
 	"github.com/golang/glog"
-	"github.com/prebid/prebid-server/cache"
+	"github.com/dbmedialab/prebid-server/cache"
 )
 
 type PostgresConfig struct {

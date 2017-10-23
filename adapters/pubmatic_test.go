@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/mxmCherry/openrtb"
-	"github.com/prebid/prebid-server/cache/dummycache"
-	"github.com/prebid/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/cache/dummycache"
+	"github.com/dbmedialab/prebid-server/pbs"
 )
 
 func CompareStringValue(val1 string, val2 string, t *testing.T) {

@@ -2,7 +2,7 @@ package adapters
 
 import (
 	"github.com/mxmCherry/openrtb"
-	"github.com/prebid/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/pbs"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

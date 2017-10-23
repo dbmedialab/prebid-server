@@ -13,8 +13,8 @@ import (
 	"errors"
 	"github.com/golang/glog"
 	"github.com/julienschmidt/httprouter"
-	"github.com/prebid/prebid-server/pbsmetrics"
-	"github.com/prebid/prebid-server/ssl"
+	"github.com/dbmedialab/prebid-server/pbsmetrics"
+	"github.com/dbmedialab/prebid-server/ssl"
 )
 
 // Recaptcha code from https://github.com/haisum/recaptcha/blob/master/recaptcha.go

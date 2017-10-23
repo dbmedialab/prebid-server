@@ -14,7 +14,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/mxmCherry/openrtb"
-	"github.com/prebid/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/pbs"
 	"golang.org/x/net/context/ctxhttp"
 )
 

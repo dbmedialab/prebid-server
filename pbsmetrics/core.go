@@ -5,7 +5,7 @@ import (
 	"github.com/rcrowley/go-metrics"
 	"fmt"
 	"time"
-	"github.com/prebid/prebid-server/config"
+	"github.com/dbmedialab/prebid-server/config"
 	"github.com/vrischmann/go-metrics-influxdb"
 )
 

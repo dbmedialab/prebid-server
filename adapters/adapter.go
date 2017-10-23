@@ -3,8 +3,8 @@ package adapters
 import (
 	"context"
 	"crypto/tls"
-	"github.com/prebid/prebid-server/pbs"
-	"github.com/prebid/prebid-server/ssl"
+	"github.com/dbmedialab/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/ssl"
 	"net/http"
 	"time"
 )

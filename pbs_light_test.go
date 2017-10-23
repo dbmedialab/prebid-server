@@ -10,10 +10,10 @@ import (
 	"github.com/mxmCherry/openrtb"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/prebid/prebid-server/cache/dummycache"
-	"github.com/prebid/prebid-server/config"
-	"github.com/prebid/prebid-server/pbs"
-	"github.com/prebid/prebid-server/pbsmetrics"
+	"github.com/dbmedialab/prebid-server/cache/dummycache"
+	"github.com/dbmedialab/prebid-server/config"
+	"github.com/dbmedialab/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/pbsmetrics"
 	"io/ioutil"
 	"strings"
 )

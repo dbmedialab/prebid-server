@@ -1,7 +1,7 @@
 package adapters
 
 import (
-	"github.com/prebid/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/pbs"
 
 	"errors"
 

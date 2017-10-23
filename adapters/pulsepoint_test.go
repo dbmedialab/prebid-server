@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/mxmCherry/openrtb"
-	"github.com/prebid/prebid-server/cache/dummycache"
-	"github.com/prebid/prebid-server/pbs"
+	"github.com/dbmedialab/prebid-server/cache/dummycache"
+	"github.com/dbmedialab/prebid-server/pbs"
 )
 
 /**
