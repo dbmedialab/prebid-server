@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{env "WERCKER_GIT_REPOSITORY"}}
+spec:
+  replicas: 2
+  revisionHistoryLimit: 2
+  template:
+    metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+      labels:
+        app: {{env "WERCKER_GIT_REPOSITORY"}}
+    spec:
+      containers:
+        - name: app
+          image: {{env "IMAGE"}}
+          ports:
+          - containerPort: 8000
+            name: http-port
+          livenessProbe:
+            httpGet:
+              path: /status
+              port: 8000
+            initialDelaySeconds: 3
+            periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /status
+              port: 8000
+            initialDelaySeconds: 3
+            periodSeconds: 15

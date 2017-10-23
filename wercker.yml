@@ -1,0 +1,35 @@
+# Use the latest Go available
+box: golang
+
+build:
+  steps:
+  # 
+  # Setup workspace
+  - wercker/setup-go-workspace:
+    package-dir: github.com/dbmedialab/$WERCKER_GIT_REPOSITORY
+  # Go package management
+  - wercker/glide-install
+  # Build the projects and copy files we want to the output dir.
+  # We build without CGO to be able to run the binary on alpine which uses musl and not libc
+  - script:
+    name: build project
+    code: |
+      CGO_ENABLED=0 go build -a -ldflags '-s' -installsuffix cgo -o prebid-server github.com/dbmedialab/$WERCKER_GIT_REPOSITORY/
+      cp -r \
+        kubefiles \
+        Dockerfile \
+        prebid-server \
+        "$WERCKER_OUTPUT_DIR"
+# Update the kubernetes deployment
+deploy:
+  box:
+    id: eu.gcr.io/dagbladet-projects/kubectl
+    username: _json_key
+    password: $GCR_DBP_JSON_KEY_FILE
+    registry: https://eu.gcr.io
+  steps:
+  # Setup namespace and update deployment
+  - script:
+    name: build and deploy
+    code: |
+      buildimage
