@@ -19,6 +19,7 @@ build:
         kubefiles \
         Dockerfile \
         prebid-server \
+        static \
         "$WERCKER_OUTPUT_DIR"
 # Update the kubernetes deployment
 deploy:
